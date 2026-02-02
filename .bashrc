@@ -113,6 +113,7 @@ if ! shopt -oq posix; then
 fi
 [ -r /home/nikita/.byobu/prompt ] && . /home/nikita/.byobu/prompt   #byobu-prompt#
 
+#Launch mtr in shell insted of a window
 alias mtr='mtr -t'
 alias grep='grep --color=auto'
 
