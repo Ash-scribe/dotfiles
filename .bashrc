@@ -116,10 +116,11 @@ fi
 alias mtr='mtr -t'
 alias grep='grep --color=auto'
 
+#Set VIM as EDITOR
 export EDITOR="/usr/bin/vim"
-
+#Enable vi mode in bash
 set -o vi
-
+#Enable fzf
 eval "$(fzf --bash)"
 
 win='/mnt/c/Users/nasyrov'
