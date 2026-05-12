@@ -124,5 +124,9 @@ set -o vi
 #Enable fzf
 eval "$(fzf --bash)"
 
-win='/mnt/c/Users/nasyrov'
-wind='/mnt/c/Users/nasyrov/Downloads'
+#Add shortcuts for Windows folders
+wslinfo --wsl-version > /dev/null
+if [ $? -eq 0 ]; then
+	win='/mnt/c/Users/nasyrov'
+	wind='/mnt/c/Users/nasyrov/Downloads'
+fi
